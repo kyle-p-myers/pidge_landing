@@ -16,7 +16,7 @@ export default function ContentContainerOne() {
         Create and access documentation within your browser of choice, or on the
         page your working within... You never have to leave again.
       </div>
-      <div className="col-start-1 row-start-3 text-lg text-indigo-500">
+      <div className="col-start-1 row-start-3 text-lg text-violet-400">
         Get started for free <ArrowForwardIcon /> 
       </div>
       <div className="flex justify-center col-start-2 row-span-3">

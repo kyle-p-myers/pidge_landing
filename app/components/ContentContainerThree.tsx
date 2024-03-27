@@ -1,16 +1,17 @@
 import React from 'react'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function ContentContainerThree() {
   return (
-    <div className='grid grid-cols-4 grid-rows-3 grid-flow-col bg-fuchsia-500 h-[500px]'>
-        <div className='col-start-1 row-start-1 bg-stone-50'>test</div>
-        <div className='row-start-2 bg-neutral-500'>test</div>
-        <div className='row-start-3 bg-amber-500'>test</div>
-        <>
-            <div className=' bg-stone-400 col-start-2 row-span-3'>test</div>
-            <div className=' bg-stone-200 col-start-3 row-span-3'>test</div>
-            <div className=' bg-stone-600 col-start-4 row-span-3'>test</div>
-        </>
+    <div className='flex mb-4 h-[400px] gap-4'>
+        <div className='w-1/2 bg-red-400'>
+          <div className='text-3xl'>AI tracking allows Pidge to find where your working, and what your working on.</div>
+          <div className='text-xl font-light'>Don’t worry, our AI is friendly, and we totally respect your privacy! Pidge only tracks what you allow, when you allow it. </div>
+          <div className='text-xl text-violet-400 font-md'>Learn more <ArrowForwardIcon/> </div>
+        </div>
+        <div className='w-1/4 bg-red-400 '>test</div>
+        <div className='w-1/4 bg-red-400'>test</div>
+        <div className='w-1/4 bg-red-400'>test</div>
     </div>
   )
 }

@@ -1,25 +1,44 @@
+'use client'
+
 import React from "react";
 import NoteExample from "./notes/NoteExample";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Image from 'next/image'
+import UserOne from '@/public/user1.png'
 
 export default function ContentContainerTwo() {
   return (
-    <div className="grid grid-cols-4 grid-rows-3 grid-flow-col">
-      <div className="col-span-1 row-span-3 col-start-1 content-center">
+    <div className="flex mb-4 h-[400px] gap-4">
+      <div className="w-1/6  h-12">
+        <NoteExample />
+        <Image
+          width={250}
+          height={250}
+          src={UserOne}
+          alt="Picture of Pidge Web Application Dashboard"
+          style={{
+            border: 'none',
+            borderRadius: '200px',
+            boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)'
+          }} />
+          </div>
+      <div className="w-1/6  h-12">
         <NoteExample />
       </div>
-      <div className="col-span-1 row-span-3 col-start-2">
-        test
+      <div className="w-1/6  h-12">
+        <NoteExample />
       </div>
-      <div className="col-span-1 row-span-3 col-start-3">
-        test
+      <div className="ml-20">
+        <div className="text-black text-3xl">Onboarding has never been easier. </div>
+        <div className="rounded-md text-black mb-2 text-xl font-light">
+          Perfect for capturing intercompany processes, Pidge helps you onboard
+          faster, keeping your employees confident with role specific
+          documentation just a click away.
+        </div>
+        <div className="rounded-md text-black text-md text-violet-400">
+          Get started for free <ArrowForwardIcon /> 
+        </div>
       </div>
-      <div className="col-start-4 row-start-1 bg-yellow-400"> Onboarding has never been easier. </div>
-      <div className="col-start-4 bg-yellow-600">
-        Perfect for capturing intercompany processes, Pidge helps you onboard
-        faster, keeping your employees confident with role specific
-        documentation just a click away.
-      </div>
-      <div className="col-start-4 bg-fuchsia-800">Get started for free</div>
     </div>
   );
 }
