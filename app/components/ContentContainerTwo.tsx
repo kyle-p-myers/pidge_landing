@@ -3,8 +3,8 @@ import NoteExample from "./notes/NoteExample";
 
 export default function ContentContainerTwo() {
   return (
-    <div className="grid grid-cols-4 grid-rows-3 grid-flow-col bg-lime-500 ">
-      <div className="col-span-1 row-span-3 col-start-1">
+    <div className="grid grid-cols-4 grid-rows-3 grid-flow-col">
+      <div className="col-span-1 row-span-3 col-start-1 content-center">
         <NoteExample />
       </div>
       <div className="col-span-1 row-span-3 col-start-2">
