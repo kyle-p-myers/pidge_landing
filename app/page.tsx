@@ -7,7 +7,7 @@ import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-slate-50">
       <div className="ml-6 mr-6">
       <NavMenu/>
       </div>
@@ -15,7 +15,9 @@ export default function Home() {
       <div className="mb-72">
         <ContentContainerOne />
       </div>
+      <div className="mb-72">
     <ContentContainerTwo />
+    </div>
     <ContentContainerThree />
     <ContactForm />
     </div>
