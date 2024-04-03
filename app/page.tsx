@@ -4,6 +4,7 @@ import ContentContainerOne from "./components/ContentContainerOne";
 import ContentContainerTwo from "./components/ContentContainerTwo";
 import ContentContainerThree from "./components/ContentContainerThree";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
     </div>
     <ContentContainerThree />
     <ContactForm />
+    </div>
+    <div className="mt-32">
+    <Footer />
     </div>
    </main>
   );

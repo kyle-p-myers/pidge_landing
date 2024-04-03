@@ -2,6 +2,7 @@
 
 import React from "react";
 import NoteExample from "./notes/NoteExample";
+import NoteExampleFade from "./notes/NoteExampleFade";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Image from 'next/image'
 import UserOne from '@/public/user1.png'
@@ -16,7 +17,7 @@ export default function ContentContainerTwo() {
         <NoteExample />
       </div>
       <div className="w-1/6  h-12">
-        <NoteExample />
+        <NoteExampleFade />
       </div>
       <div className="ml-20">
         <div className="text-black text-3xl">Onboarding has never been easier. </div>
