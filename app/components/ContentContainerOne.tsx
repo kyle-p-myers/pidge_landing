@@ -9,10 +9,10 @@ export default function ContentContainerOne() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-2">
       <div className="col-start-1 row-span-3 spacing-2">
-      <div className="text-xl md:text-3xl pt-6 md:pt-20 text-center md:text-left text-black col-start-1">
+      <div className="text-xl md:text-3xl pt-6 md:pt-20 text-center md:text-left text-black col-start-1 mb-6">
         Create document flows, without ever having to leave your browser.
       </div>
-      <div className="text-sm md:text-xl font-light text-center md:text-left text-slate-600 flex justify-center md:justify-start col-start-1 row-start-2">
+      <div className="text-sm md:text-xl font-light text-center md:text-left text-slate-600 flex justify-center md:justify-start col-start-1 row-start-2 mb-20">
         Create and access documentation within your browser of choice, or on the page you're working within... You never have to leave again.
       </div>
       <div className="flex justify-center md:justify-start text-lg text-violet-400 row-start-3">

@@ -20,7 +20,7 @@ export default function ContentContainerTwo() {
         <NoteExampleFade />
       </div>
       <div className="ml-20">
-        <div className="text-black text-3xl">Onboarding has never been easier. </div>
+        <div className="text-black text-3xl mb-6">Onboarding has never been easier. </div>
         <div className="rounded-md text-black mb-20 text-xl font-light">
           Perfect for capturing intercompany processes, Pidge helps you onboard
           faster, keeping your employees confident with role specific
