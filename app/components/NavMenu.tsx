@@ -21,12 +21,12 @@ export default function NavMenu() {
           }}
         /> Pidge
         </div>
-        <Button className={`col-start-3 w-32 ${mont.className}`}>Product</Button>
-        <Button className={`w-32 ${mont.className}`}>Features</Button>
-        <Button className={`w-32 ${mont.className}`}>Pricing</Button>
-        <Button className={`w-32 ${mont.className}`}>Resources</Button>
-        <Button className={`col-start-10 w-32 bg-gradient-to-b from-violet-300 to-purple-500 text-white ${mont.className}`}>Try it out</Button>
-        <Button className={`w-32 border-solid border-2 border-violet-300 text-black ${mont.className}`}>Login</Button>
+        <Button className={`col-start-3 w-32 justify-center place-items-end ${mont.className}`}>Product</Button>
+        <Button className={`w-32 justify-center place-items-end  ${mont.className}`}>Features</Button>
+        <Button className={`w-32 justify-center place-items-end  ${mont.className}`}>Pricing</Button>
+        <Button className={`w-32 justify-center place-items-end  ${mont.className}`}>Resources</Button>
+        <Button className={`col-start-10 w-32 bg-gradient-to-b from-violet-300 to-purple-500 text-white   ${mont.className}`}>Try it out</Button>
+        <Button className={`w-32 border-solid border-2 border-violet-300 text-black justify-center  ${mont.className}`}>Login</Button>
     </div>
   )
 }
