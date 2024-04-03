@@ -33,3 +33,15 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 600px) {
+  .item {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 400px) {
+  .item {
+    width: 100%;
+  }
+}
