@@ -1,39 +1,34 @@
-'use client'
-
-import React from "react"
-import Image from 'next/image'
-import Notes from '@/public/notes.jpg'
+import React from "react";
+import Image from 'next/image';
+import Notes from '@/public/notes.jpg';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 
 export default function ContentContainerOne() {
   return (
-    <div className="grid grid-rows-3 grid-cols-2 grid-flow-col">
-      <div className="col-start-1 text-3xl pt-20 text-black">
+    <div className="grid grid-cols-2 md:grid-cols-2">
+      <div className="col-start-1 row-span-3 spacing-2">
+      <div className="text-xl md:text-3xl pt-6 md:pt-20 text-center md:text-left text-black col-start-1">
         Create document flows, without ever having to leave your browser.
       </div>
-      <div className="col-start-1 text-xl font-light text-slate-600 h-24">
-        Create and access documentation within your browser of choice, or on the
-        page your working within... You never have to leave again.
+      <div className="text-sm md:text-xl font-light text-center md:text-left text-slate-600 flex justify-center md:justify-start col-start-1 row-start-2">
+        Create and access documentation within your browser of choice, or on the page you're working within... You never have to leave again.
       </div>
-      <div className="col-start-1 row-start-3 text-lg text-violet-400">
-        Get started for free <ArrowForwardIcon /> 
+      <div className="flex justify-center md:justify-start text-lg text-violet-400 row-start-3">
+        Get started for free <ArrowForwardIcon />
       </div>
-      <div className="flex justify-center col-start-2 row-span-3">
+      </div>
+      <div className="flex justify-center">
         <Image
-          width={720}
-          height={495}
           src={Notes}
           alt="Picture of Pidge Web Application Dashboard"
-          style={{
-            border: 'none',
-            borderRadius: '10px',
-            boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)'
-
-          }}
+          layout="responsive"
+          width={720}
+          height={495}
+          className="rounded-lg shadow-lg"
         />
       </div>
     </div>
-
   );
 }
